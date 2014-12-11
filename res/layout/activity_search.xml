@@ -1,0 +1,97 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/map"
+    tools:context=".MainActivity" >
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="396dp"
+    android:orientation="vertical" >
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="30dp"
+         android:layout_weight="0.5"
+         android:text="Search."
+         android:textColor="@android:color/white"
+       
+         android:textSize="20sp" />
+     
+<!--  
+     <com.example.googlemapcopy.CustomAutoCompleteTextView
+         android:id="@+id/atv_places"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="Enter here"  />
+        
+        AutoCompleteTextView
+    -->
+   
+   
+    <com.example.googlemapcopy.CustomAutoCompleteTextView
+        android:id="@+id/atv_places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Enter here"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+         />
+
+    <Button
+        android:id="@+id/speak"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/atv_places"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:background="@drawable/speak"
+        android:onClick="Speak" />
+
+    <Button
+        android:id="@+id/Location"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speak"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:onClick="location"
+        android:text="Search"
+        android:textColor="@android:color/black" />
+<!--  
+    <CheckBox
+        android:id="@+id/place_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="onCheckboxClicked"
+        android:text="Place Search"
+        android:textColor="@android:color/white" />
+  -->
+
+     <CheckBox
+         android:id="@+id/place_search"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="16dp"
+         android:layout_toRightOf="@+id/Location"
+         android:onClick="onCheckboxClicked"
+         android:text="check" 
+         android:textColor="@android:color/white"/>
+
+</RelativeLayout>
+</ScrollView>

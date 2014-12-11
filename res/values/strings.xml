@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GoogleMapCopy</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="final_">CHOICE 2</string>
+	<string name="partial">CHOICE 1</string>
+	<string name="conflict">CONFLICT</string>
+	<string name="title_activity_my_location">MyLocation</string>
+	<string name="title_activity_alert_box">AlertBox</string>
+	<string name="title_activity_alert">Alert</string>
+	<string name="title_activity_google_webview">MainActivity</string>
+</resources>
